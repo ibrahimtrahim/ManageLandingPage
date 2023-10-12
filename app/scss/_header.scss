@@ -1,0 +1,59 @@
+.header {
+    nav{
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &__logo{
+        img {
+            width: 8.8125rem;
+            height: 1.375rem;
+        }
+    }
+
+    &__links {
+        a {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: $DarkBlue;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right: 35px;
+            }
+
+            &:hover{
+                color: $DarkGrayishBlue;
+            }
+        }
+    }
+    .overlay {
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-image: linear-gradient($VeryPaleRed, transparent);
+    }
+
+    &__menu{
+        padding: 1.625rem;
+        border-radius: 5px;
+        position: absolute;
+        background: white;
+        width: calc(100% - 48px);
+        margin-top: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        a {
+            font-weight: 700;
+            display: block;
+            color: $DarkBlue;
+            padding: 0.625rem;
+            text-align: center;
+        }
+    }
+}

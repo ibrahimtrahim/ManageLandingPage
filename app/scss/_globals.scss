@@ -21,12 +21,9 @@ html {
     }
   }
 
-  //spacing
 
-  .container {
-    padding: 0 24px;
-    padding-left: 24px;
-    padding-right: 24px;
+  h1, h2, h3 {
+    margin-top: 0;
   }
 
   a, a:visited, a:hover {
@@ -35,7 +32,8 @@ html {
 
   //button
 
-  .btn {
+  .btn__cta {
+    display: inline-block;
     padding: 1rem 1.875rem;
     background: $BrightRed;
     color: $VaryLightGray;

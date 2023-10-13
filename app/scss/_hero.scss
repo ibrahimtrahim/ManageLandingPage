@@ -1,0 +1,50 @@
+.hero {
+    @include breackpoint-up(large){
+        display: flex;
+        align-items: center;
+        margin-top: 4.9rem;
+    }
+    &__image{
+        img{
+            width: 100%;
+            @include breackpoint-up(large){
+                width: 40rem;
+                height: 35rem;
+            }
+        }
+        @include breackpoint-up(large){
+            flex: 3;
+            order: 2;
+            text-align: right;
+        }
+    }
+
+    &__text{
+        text-align: center;
+        @include breackpoint-up(large){
+            flex: 2;
+            order: 1;
+            text-align: left;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 2.31rem;
+            color: $DarkBlue;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            @include breackpoint-up(large){
+                font-size: 3.6rem;
+                margin-bottom: 2.1875rem;
+            }
+        }
+        p {
+            line-height: 1.5;
+            color: $DarkGrayishBlue;
+            margin-bottom: 2.0625rem;
+            @include breackpoint-up(large){
+                margin-bottom: 2.6875rem;
+                width: 358px;
+            }
+        }
+    }
+}

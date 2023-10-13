@@ -1,4 +1,30 @@
 .header {
+
+    &__image{
+        position: absolute;
+        z-index: -1;
+        top: -22px;
+        left: 80px;
+        right: -109px;
+        background-image: url(/images/bg-tablet-pattern.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        min-height: 20.94rem;
+        @include breackpoint-up(medium){
+            position: absolute;
+            top: -21px;
+            left: 261px;
+            right: -135px;
+            min-height: 36.94rem;       
+        }
+        @include breackpoint-up(large){
+            top: -134px;
+            left: 850px;
+            right: -165px;
+            min-height: 48.94rem;        
+        }
+    }
     nav{
         position: relative;
         padding-top: 40px;
@@ -56,4 +82,5 @@
             text-align: center;
         }
     }
+
 }

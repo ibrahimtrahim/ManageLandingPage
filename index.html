@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app/scss/all.min.css">
   <link rel="stylesheet" href="app/scss/normalize.css">
+  <link rel="stylesheet" href="app/scss/bootstrap.css">
   <link rel="stylesheet" href="app/scss/style.css">
+  
   
   <title>Frontend Mentor | Manage landing page</title>
 
@@ -21,8 +23,9 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  <header class="header container">
     <div id="overlay" class="overlay"></div>
+    <div class="header__image"></div>
     <nav class="container flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="./images/logo.svg" alt="manage-logo">
@@ -36,7 +39,7 @@
         <a href="#">Pricing</a><a href="#">Product</a><a href="#">About Us</a><a href="#">Careers</a><a href="#">Community</a>
       </div>
 
-      <button class="btn hide-for-mobile" type="button">Get Started</button>
+      <button class="btn__cta hide-for-mobile" type="button">Get Started</button>
     </nav>
     <div id="toggle" class="header__menu">
       <a href="">Pricing</a>
@@ -46,16 +49,24 @@
       <a href="">Community</a>
     </div>
   </header>
+  <main>
+    <section class="hero container">
+      <div class="hero__image">
+        <img src="/images/illustration-intro.svg" alt="illustration-intro">
+      </div>
+      <div class="hero__text">
+        <h1>
+          Bring everyone together to build better products.
+        </h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.
+        </p>
+        <button class="btn__cta" type="button">Get Started</button>
+      </div>
+    </section>
+  </main>
 <!--
-  
-
-  Bring everyone together to build better products.
-
-  Manage makes it simple for software teams to plan day-to-day 
-  tasks while keeping the larger team goals in view.
-
-  Get Started
-
   What’s different about Manage?
 
   Manage provides all the functionality your team needs, without 

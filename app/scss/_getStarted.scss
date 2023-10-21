@@ -1,0 +1,63 @@
+.getStarted {
+    position: relative;
+    margin-top: 3rem;
+    text-align: center;
+    background: $BrightRed;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+    @include breackpoint-down(medium){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @include breackpoint-up(large){
+        margin-top: 10rem;
+    }
+    &__image {
+        background-image: url(/images/bg-tablet-pattern.svg);
+        color: $VeryPaleRed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $BrightRed;
+        opacity: 0.1;
+        position: absolute;
+        top: 51px;
+        right: 285px;
+        left: -358px;
+        bottom: -86px;
+        z-index: 1;
+        @include breackpoint-up(large){
+            top: -55px;
+            right: 553px;
+            left: -75px;
+            bottom: 40px;
+            min-height: 48.94rem;
+        }
+    }
+    &__desktop{
+        position: relative;
+        z-index: 2;
+        @include breackpoint-up(large){
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    h2 {
+        color: $VaryLightGray;
+        font-weight: 700;
+        font-size: 2.3rem;
+        line-height: 2;
+        margin-bottom: 1rem;
+        @include breackpoint-up(large){
+            text-align: left;
+            line-height: 1.15;
+            width: 480px;
+        }
+    }
+    button {
+        background-color: $VaryLightGray;
+        color: $BrightRed;
+    }
+}

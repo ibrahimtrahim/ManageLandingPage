@@ -1,0 +1,134 @@
+.footer {
+    background-color: $VeryDarkBlue;
+    .footercontainer{
+        color: $VaryLightGray;
+    padding: 2.5rem;
+    text-align: center;
+    @include breackpoint-up(large){
+        display: grid;       
+        grid-template-columns: repeat(3, 1fr) 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "logo links1 links2 cta"
+    }
+    a {
+        color: $VaryLightGray;
+    }
+    }
+    
+    &__logodesktop{
+        img {
+            @include breackpoint-up(large){
+                margin-bottom: 5.25rem;
+            }
+        }
+        @include breackpoint-up(large){
+            grid-area: logo;
+        }
+    }
+    &__form {
+        input{
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        button {
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            border: none;
+            background-color: $BrightRed;
+            color: $VaryLightGray;
+        }
+        @include breackpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        @include breackpoint-up(large){
+            margin-bottom: 5.25rem;
+        }
+    }
+    &__links {
+        font-size: 0.9375rem;
+        @include breackpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        a {
+            line-height: 2.25;
+        }
+        .col1{
+           display: flex;
+           flex-direction: column;
+           text-align: left;
+           @include breackpoint-up(large){
+            grid-area: links1;
+        }
+        }
+        .col2 {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            @include breackpoint-up(large){
+                grid-area: links2;
+            }
+        }
+    }
+    &__socials{
+        @include breackpoint-down(medium){
+            margin-bottom: 3rem;
+        }
+        @include breackpoint-up(large){
+            grid-area: socials;
+            align-self: end;
+        }
+        img {
+            @include breackpoint-down(medium){
+                width: 35px;
+            }
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        a:not(:last-child){
+            margin-right: 1.5rem;
+            @include breackpoint-up(large){
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &__socialsdesktop{
+        justify-self: end;
+        
+    }
+    &__logo {
+        display: inline-block;
+        @include breackpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        @include breackpoint-up(large){
+            text-align: left;   
+        }
+    }
+    &__cta{
+        @include breackpoint-down(medium){
+            margin-bottom: 1.875rem;
+        }
+        @include breackpoint-up(large){
+            grid-area: cta;
+            text-align: right;
+        }
+    }
+    &__Copyright {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: $DarkGrayishBlue;
+        @include breackpoint-up(large){
+            grid-area: Copyright;
+            justify-self: end;
+        }
+    }
+}

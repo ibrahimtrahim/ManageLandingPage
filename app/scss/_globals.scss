@@ -15,6 +15,7 @@ html {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
     line-height: 1.3;
+    overflow-x: hidden;
 
     &.noscroll {
       overflow: hidden;
@@ -24,6 +25,10 @@ html {
 
   h1, h2, h3 {
     margin-top: 0;
+  }
+
+  p {
+    color: $DarkGrayishBlue;
   }
 
   a, a:visited, a:hover {

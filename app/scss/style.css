@@ -94,7 +94,7 @@ a, a:visited, a:hover {
   top: -22px;
   left: 80px;
   right: -109px;
-  background-image: url(images/bg-tablet-pattern.svg);
+  background-image: url(/images/bg-tablet-pattern.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -268,7 +268,7 @@ a, a:visited, a:hover {
   left: 227px;
   right: -155px;
   bottom: -109px;
-  background-image: url(../images/bg-tablet-pattern.svg);
+  background-image: url(/images/bg-tablet-pattern.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -509,7 +509,7 @@ a, a:visited, a:hover {
 }
 
 .getStarted__image {
-  background-image: url(images/bg-tablet-pattern.svg);
+  background-image: url(/images/bg-tablet-pattern.svg);
   color: #ffefeb;
   background-size: cover;
   background-repeat: no-repeat;
